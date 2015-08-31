@@ -1,0 +1,437 @@
+.sprite {
+    background-image: url('../img/sprite-main.png');
+    background-repeat: no-repeat;
+    display: block;
+}
+.sprite-form-checkbox {
+    width: 20px;
+    height: 20px;
+    background-position: -1px -1px;
+}
+.sprite-form-checkbox-checked {
+    width: 20px;
+    height: 20px;
+    background-position: -23px -1px;
+}
+.sprite-form-radio {
+    width: 20px;
+    height: 20px;
+    background-position: -45px -1px;
+}
+.sprite-form-radio-checked {
+    width: 20px;
+    height: 20px;
+    background-position: -67px -1px;
+}
+.sprite-ico-fb {
+    width: 12px;
+    height: 22px;
+    background-position: -89px -1px;
+}
+.sprite-ico-fb-hover {
+    width: 12px;
+    height: 22px;
+    background-position: -103px -1px;
+}
+.sprite-ico-inst {
+    width: 21px;
+    height: 21px;
+    background-position: -117px -1px;
+}
+.sprite-ico-inst-hover {
+    width: 21px;
+    height: 21px;
+    background-position: -140px -1px;
+}
+.sprite-ico-login {
+    width: 18px;
+    height: 16px;
+    background-position: -163px -1px;
+}
+.sprite-ico-padlock {
+    width: 15px;
+    height: 17px;
+    background-position: -183px -1px;
+}
+.sprite-ico-user {
+    width: 15px;
+    height: 15px;
+    background-position: -200px -1px;
+}
+.sprite-main-ico-vk {
+    width: 25px;
+    height: 16px;
+    background-position: -217px -1px;
+}
+.sprite-ico-vk-hover {
+    width: 25px;
+    height: 16px;
+    background-position: -244px -1px;
+}
+body {
+  min-width: 960px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: white;
+  background: black url('../img/bg-index.jpg') no-repeat center top; 
+}
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.clearfix:after {
+  display: table;
+  content: '';
+  clear: both;
+}
+.main-header {
+  margin-bottom: 57px;
+  background-color: black; 
+}
+.main-navigation {
+  float: left;
+  width: 780px;
+}
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  list-style: none;
+}
+.main-navigation li {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  vertical-align: top;
+}
+.main-navigation a {
+  display: block;
+  padding: 26px 20px;
+  text-decoration: none;
+  color: white;
+}
+.main-navigation a:hover {
+  background-color: #242424;
+}
+.main-navigation .active a {
+  position: relative;
+}
+.main-navigation .active a:hover {
+  background: none;
+}
+.main-navigation .active a::after {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  right: 20px;
+  height: 4px;
+  background-color: white;
+  content: '';
+}
+.user-block {
+  float: right;
+  max-width: 140px;
+}
+.login {
+  position: relative;
+  display: inline-block;
+  padding: 26px 20px;
+  padding-left: 50px; 
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: white;
+}
+.login:hover {
+  background-color: #242424;
+}
+.login:before {
+  position: absolute;
+  top: 28px;
+  left: 20px;
+  width: 18px;
+  height: 16px;
+  background: transparent url('../img/sprite.png') no-repeat -163px -1px;;
+  content: '';
+  opacity: 0.3;
+}
+.login:hover:before {
+  opacity: 1;
+}
+.logo {
+  width: 368px;
+  height: 204px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.features-row {
+  margin-bottom: 70px;
+}
+.features-item {
+  float: left;
+  width: 300px;
+  margin-right: 20px;
+  text-align: center;
+}
+.features-item:last-child {
+  margin-right: 0;
+}
+.features-title {
+  position: relative;
+  padding-bottom: 40px;
+  margin-bottom: 30px;
+  font-size: 30px;
+  line-height: 42px;
+}
+.features-title:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: white;
+  content: '';
+  transform: rotate(45deg);
+}
+.features-item p {
+  margin: 10px;
+}
+.index-content {
+  margin-bottom: 30px;
+  padding: 50px 80px;
+  color: black;
+  background: 
+              url('../img/bg-index-content-shadow.png') no-repeat center,
+      #f8f5f2 url('../img/bg-pattern-white.jpg') -50px 0;
+}
+.content-column-left {
+  float: left;
+  width: 350px;
+}
+.content-column-right {
+  float: right;
+  width: 300px;
+}
+.content-column-title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 30px;
+  line-height: 42px;
+}
+.news-preview {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.news-preview li {
+  margin-bottom: 25px;
+}
+.news-preview 0 {
+  margin: 0;
+}
+.news-preview time {
+  font-style: italic;
+  text-transform: none;
+}
+.btn {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 10px 33px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  vertical-align: top;
+  color: white;
+  background-color: black;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.btn:hover, 
+.btn:active {
+  background-color: #663d15;
+}
+.btn:disabled {
+  cursor: pointer;
+  opacity: 0.5;
+}
+.btn:disabled:hover {
+  background-color: black;
+}
+.gallery {
+  position: relative;
+  height: 260px;
+}
+.gallery-content {
+  height: 164px;
+  margin: 0;
+  background-color: #ccc;
+  border: 7px solid white;
+}
+.gallery-content img {
+  width: 286px;
+  height: 164px;
+}
+.gallery .btn {
+  position: absolute;
+  bottom: 0;
+  width: 140px;
+  margin: 0;
+}
+.gallery-prev {
+  left: 0;
+}
+.gallery-next {
+  right: 0;
+}
+.index-content p {
+  margin: 0;
+  margin-bottom: 25px;
+}
+.appointment-form input {
+  float: left;
+  width: 106px;
+  padding: 10px 15px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: black;
+  background-color: #f9f6f3;
+  border: 2px solid black;
+  outline: none;
+}
+.appointment-form input[type='date'] {
+  width: 121px;
+  padding-right: 0;
+}
+.appointment-form input:focus {
+  border: 2px solid #663d15;
+}
+.appointment-form input:nth-child(2n) {
+  margin-right: 0;
+}
+.appointment-form .btn {
+  width: 100%;
+  clear: both;
+}
+.main-footer {
+  margin-top: 60px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background: #252525 url('../img/bg-pattern-black.jpg') 
+}
+.footer-contacts {
+  float: left;
+  width: 320px;
+  margin-right: 80px;
+}
+.footer-contacts a {
+  color: #fff;
+}
+.footer-contacts a:hover {
+  text-decoration: none;
+}
+.footer-social {
+  float: left;
+  display: table;
+  word-spacing: -.36em;
+  text-align: center;
+}
+.footer-social a {
+  word-spacing: normal;
+}
+.footer-copyright {
+  float: right;
+  max-width: 320px;
+  text-align: center;
+}
+.footer-social p,
+.footer-copyright p {
+  margin: 0;
+  margin-bottom: 15px;
+}
+.footer-social p {
+  text-align: center;
+}
+.social-btn {
+  position: relative;
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  margin: 0 2px;
+  vertical-align: top;
+  font-size: 0;
+  background-color: black;
+}
+.social-btn:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: url('../img/sprite.png') no-repeat center;
+  content: '';
+  transform: translate(-50%, -50%);
+}
+.social-btn:hover {
+  background-color: white;
+}
+.social-btn-vk:before {
+  width: 25px;
+  height: 16px;
+  background-position: -217px -1px;
+}
+.social-btn-fb:before {
+  width: 12px;
+  height: 22px;
+  background-position: -89px -1px;
+}
+.social-btn-inst:before {
+  width: 21px;
+  height: 21px;
+  background-position: -117px -2px;
+}
+.social-btn-vk:hover:before {
+  width: 25px;
+  height: 16px;
+  background-position: -244px -1px;
+}
+.social-btn-fb:hover:before {
+  width: 12px;
+  height: 22px;
+  background-position: -103px -1px;
+}
+.social-btn-inst:hover:before {
+  width: 21px;
+  height: 21px;
+  background-position: -140px -2px;
+}
+.footer-copyright .btn {
+  margin-right: 0;
+}
+.footer-copyright .btn:hover {
+  color: black;
+  background: white;
+}
+
+/*to do
+- inline-bloks margins;
+- interligne;
+- <p> in news preview and under.
+
+/*questions 
+- spaces between properties;
+- placeholder with type date and time. Can I use?
