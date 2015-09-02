@@ -348,12 +348,7 @@ body {
 }
 .footer-social {
   float: left;
-  display: table;
-  word-spacing: -.36em;
   text-align: center;
-}
-.footer-social a {
-  word-spacing: normal;
 }
 .footer-copyright {
   float: right;

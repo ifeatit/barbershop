@@ -4,12 +4,40 @@
 		"selected_items":
 		[
 			[
-				"rig",
-				"right"
+				"font",
+				"font-size"
 			],
 			[
-				"font",
-				"font-style"
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"text-a",
+				"text-align"
+			],
+			[
+				"bord",
+				"border"
+			],
+			[
+				"rig",
+				"right"
 			],
 			[
 				"he",
@@ -20,10 +48,6 @@
 				"margin-right"
 			],
 			[
-				"ba",
-				"background-color"
-			],
-			[
 				"text",
 				"text-decoration"
 			],
@@ -32,20 +56,12 @@
 				"text-transform"
 			],
 			[
-				"margin",
-				"margin"
-			],
-			[
 				"back",
 				"background"
 			],
 			[
 				"padd",
 				"padding"
-			],
-			[
-				"ma",
-				"margin"
 			],
 			[
 				"te",
@@ -152,10 +168,6 @@
 				"background"
 			],
 			[
-				"bord",
-				"border-bottom"
-			],
-			[
 				"border",
 				"border-color"
 			],
@@ -178,10 +190,6 @@
 			[
 				"f",
 				"float"
-			],
-			[
-				"marg",
-				"margin-top"
 			],
 			[
 				"background-c",
@@ -208,10 +216,13 @@
 			}
 		},
 		{
+			"contents": ".sprite {\n    background-image: url('../img/sprite-main.png');\n    background-repeat: no-repeat;\n    display: block;\n}\n.sprite-form-checkbox {\n    width: 20px;\n    height: 20px;\n    background-position: -1px -1px;\n}\n.sprite-form-checkbox-checked {\n    width: 20px;\n    height: 20px;\n    background-position: -23px -1px;\n}\n.sprite-form-radio {\n    width: 20px;\n    height: 20px;\n    background-position: -45px -1px;\n}\n.sprite-form-radio-checked {\n    width: 20px;\n    height: 20px;\n    background-position: -67px -1px;\n}\n.sprite-ico-fb {\n    width: 12px;\n    height: 22px;\n    background-position: -89px -1px;\n}\n.sprite-ico-fb-hover {\n    width: 12px;\n    height: 22px;\n    background-position: -103px -1px;\n}\n.sprite-ico-inst {\n    width: 21px;\n    height: 21px;\n    background-position: -117px -1px;\n}\n.sprite-ico-inst-hover {\n    width: 21px;\n    height: 21px;\n    background-position: -140px -1px;\n}\n.sprite-ico-login {\n    width: 18px;\n    height: 16px;\n    background-position: -163px -1px;\n}\n.sprite-ico-padlock {\n    width: 15px;\n    height: 17px;\n    background-position: -183px -1px;\n}\n.sprite-ico-user {\n    width: 15px;\n    height: 15px;\n    background-position: -200px -1px;\n}\n.sprite-main-ico-vk {\n    width: 25px;\n    height: 16px;\n    background-position: -217px -1px;\n}\n.sprite-ico-vk-hover {\n    width: 25px;\n    height: 16px;\n    background-position: -244px -1px;\n}\nbody {\n  min-width: 960px;\n  font-family: 'PT Sans Narrow', sans-serif;\n  font-weight: 700;\n  font-size: 14px;\n  line-height: 24px;\n  text-transform: uppercase;\n  color: white;\n  background: black url('../img/bg-index.jpg') no-repeat center top; \n}\n.container {\n  width: 940px;\n  margin: 0 auto;\n  padding: 0 10px;\n}\n.clearfix:after {\n  display: table;\n  content: '';\n  clear: both;\n}\n.main-header {\n  margin-bottom: 57px;\n  background-color: black; \n}\n.main-navigation {\n  float: left;\n  width: 780px;\n}\n.main-navigation ul {\n  margin: 0;\n  padding: 0;\n  font-size: 0;\n  list-style: none;\n}\n.main-navigation li {\n  display: inline-block;\n  font-size: 16px;\n  line-height: 20px;\n  vertical-align: top;\n}\n.main-navigation a {\n  display: block;\n  padding: 26px 20px;\n  text-decoration: none;\n  color: white;\n}\n.main-navigation a:hover {\n  background-color: #242424;\n}\n.main-navigation .active a {\n  position: relative;\n}\n.main-navigation .active a:hover {\n  background: none;\n}\n.main-navigation .active a::after {\n  position: absolute;\n  bottom: 0;\n  left: 20px;\n  right: 20px;\n  height: 4px;\n  background-color: white;\n  content: '';\n}\n.user-block {\n  float: right;\n  max-width: 140px;\n}\n.login {\n  position: relative;\n  display: inline-block;\n  padding: 26px 20px;\n  padding-left: 50px; \n  vertical-align: top;\n  font-size: 16px;\n  line-height: 20px;\n  text-decoration: none;\n  color: white;\n}\n.login:hover {\n  background-color: #242424;\n}\n.login:before {\n  position: absolute;\n  top: 28px;\n  left: 20px;\n  width: 18px;\n  height: 16px;\n  background: transparent url('../img/sprite.png') no-repeat -163px -1px;;\n  content: '';\n  opacity: 0.3;\n}\n.login:hover:before {\n  opacity: 1;\n}\n.logo {\n  width: 368px;\n  height: 204px;\n  margin: 0 auto;\n  margin-bottom: 20px;\n}\n.features-row {\n  margin-bottom: 70px;\n}\n.features-item {\n  float: left;\n  width: 300px;\n  margin-right: 20px;\n  text-align: center;\n}\n.features-item:last-child {\n  margin-right: 0;\n}\n.features-title {\n  position: relative;\n  padding-bottom: 40px;\n  margin-bottom: 30px;\n  font-size: 30px;\n  line-height: 42px;\n}\n.features-title:after {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  margin: 0 auto;\n  display: block;\n  width: 20px;\n  height: 20px;\n  background: white;\n  content: '';\n  transform: rotate(45deg);\n}\n.features-item p {\n  margin: 10px;\n}\n.index-content {\n  margin-bottom: 30px;\n  padding: 50px 80px;\n  color: black;\n  background: \n              url('../img/bg-index-content-shadow.png') no-repeat center,\n      #f8f5f2 url('../img/bg-pattern-white.jpg') -50px 0;\n}\n.content-column-left {\n  float: left;\n  width: 350px;\n}\n.content-column-right {\n  float: right;\n  width: 300px;\n}\n.content-column-title {\n  margin: 0;\n  margin-bottom: 30px;\n  font-size: 30px;\n  line-height: 42px;\n}\n.news-preview {\n  margin: 0;\n  padding: 0;\n  list-style: none;\n}\n.news-preview li {\n  margin-bottom: 25px;\n}\n.news-preview 0 {\n  margin: 0;\n}\n.news-preview time {\n  font-style: italic;\n  text-transform: none;\n}\n.btn {\n  display: inline-block;\n  margin-right: 20px;\n  padding: 10px 33px;\n  font-family: 'PT Sans Narrow', sans-serif;\n  font-weight: 700;\n  font-size: 14px;\n  line-height: 24px;\n  text-transform: uppercase;\n  text-decoration: none;\n  vertical-align: top;\n  color: white;\n  background-color: black;\n  border: none;\n  outline: none;\n  cursor: pointer;\n}\n.btn:hover, \n.btn:active {\n  background-color: #663d15;\n}\n.btn:disabled {\n  cursor: pointer;\n  opacity: 0.5;\n}\n.btn:disabled:hover {\n  background-color: black;\n}\n.gallery {\n  position: relative;\n  height: 260px;\n}\n.gallery-content {\n  height: 164px;\n  margin: 0;\n  background-color: #ccc;\n  border: 7px solid white;\n}\n.gallery-content img {\n  width: 286px;\n  height: 164px;\n}\n.gallery .btn {\n  position: absolute;\n  bottom: 0;\n  width: 140px;\n  margin: 0;\n}\n.gallery-prev {\n  left: 0;\n}\n.gallery-next {\n  right: 0;\n}\n.index-content p {\n  margin: 0;\n  margin-bottom: 25px;\n}\n.appointment-form input {\n  float: left;\n  width: 106px;\n  padding: 10px 15px;\n  margin-right: 20px;\n  margin-bottom: 20px;\n  font-family: 'PT Sans Narrow', sans-serif;\n  font-weight: 700;\n  font-size: 14px;\n  line-height: 24px;\n  text-transform: uppercase;\n  color: black;\n  background-color: #f9f6f3;\n  border: 2px solid black;\n  outline: none;\n}\n.appointment-form input[type='date'] {\n  width: 121px;\n  padding-right: 0;\n}\n.appointment-form input:focus {\n  border: 2px solid #663d15;\n}\n.appointment-form input:nth-child(2n) {\n  margin-right: 0;\n}\n.appointment-form .btn {\n  width: 100%;\n  clear: both;\n}\n.main-footer {\n  margin-top: 60px;\n  padding-top: 60px;\n  padding-bottom: 40px;\n  background: #252525 url('../img/bg-pattern-black.jpg') \n}\n.footer-contacts {\n  float: left;\n  width: 320px;\n  margin-right: 80px;\n}\n.footer-contacts a {\n  color: #fff;\n}\n.footer-contacts a:hover {\n  text-decoration: none;\n}\n.footer-social {\n  float: left;\n  display: table;\n  word-spacing: -.36em;\n  text-align: center;\n}\n.footer-social a {\n  word-spacing: normal;\n}\n.footer-copyright {\n  float: right;\n  max-width: 320px;\n  text-align: center;\n}\n.footer-social p,\n.footer-copyright p {\n  margin: 0;\n  margin-bottom: 15px;\n}\n.footer-social p {\n  text-align: center;\n}\n.social-btn {\n  position: relative;\n  display: inline-block;\n  width: 43px;\n  height: 43px;\n  margin: 0 2px;\n  vertical-align: top;\n  font-size: 0;\n  background-color: black;\n}\n.social-btn:before {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  background: url('../img/sprite.png') no-repeat center;\n  content: '';\n  transform: translate(-50%, -50%);\n}\n.social-btn:hover {\n  background-color: white;\n}\n.social-btn-vk:before {\n  width: 25px;\n  height: 16px;\n  background-position: -217px -1px;\n}\n.social-btn-fb:before {\n  width: 12px;\n  height: 22px;\n  background-position: -89px -1px;\n}\n.social-btn-inst:before {\n  width: 21px;\n  height: 21px;\n  background-position: -117px -2px;\n}\n.social-btn-vk:hover:before {\n  width: 25px;\n  height: 16px;\n  background-position: -244px -1px;\n}\n.social-btn-fb:hover:before {\n  width: 12px;\n  height: 22px;\n  background-position: -103px -1px;\n}\n.social-btn-inst:hover:before {\n  width: 21px;\n  height: 21px;\n  background-position: -140px -2px;\n}\n.footer-copyright .btn {\n  margin-right: 0;\n}\n.footer-copyright .btn:hover {\n  color: black;\n  background: white;\n}\n\n/*to do\n- inline-bloks margins;\n- interligne;\n- <p> in news preview and under.\n\n/*questions \n- spaces between properties;\n- placeholder with type date and time. Can I use?",
 			"file": "css/main.css",
+			"file_size": 8262,
+			"file_write_time": 130855219540298951,
 			"settings":
 			{
-				"buffer_size": 5427,
+				"buffer_size": 7826,
 				"line_ending": "Windows"
 			}
 		},
@@ -295,8 +306,7 @@
 	},
 	"expanded_folders":
 	[
-		"/D/Dropbox/Development/barbershop",
-		"/D/Dropbox/Development/barbershop/css"
+		"/D/Dropbox/Development/barbershop"
 	],
 	"file_history":
 	[
@@ -563,8 +573,8 @@
 						"selection":
 						[
 							[
-								2552,
-								2552
+								4827,
+								4827
 							]
 						],
 						"settings":
@@ -577,7 +587,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3080.0,
+						"translation.y": 1943.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -589,15 +599,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5427,
+						"buffer_size": 7826,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5339,
-								5339
+								7562,
+								7562
 							]
 						],
 						"settings":
@@ -610,7 +620,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 6812.0,
+						"translation.y": 9080.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -644,7 +654,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 110.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
