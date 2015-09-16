@@ -90,6 +90,7 @@ body {
 }
 .main-header {
   margin-bottom: 57px;
+  color: white;
   background-color: black; 
 }
 .main-navigation {
@@ -206,7 +207,7 @@ body {
 }
 .index-content {
   margin-bottom: 30px;
-  padding: 50px 80px;
+  padding: 45px 80px;
   color: black;
   background: 
               url('../img/bg-index-content-shadow.png') no-repeat center,
@@ -222,7 +223,7 @@ body {
 }
 .content-column-title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   font-size: 30px;
   line-height: 42px;
 }
@@ -297,7 +298,7 @@ body {
 }
 .index-content p {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 .appointment-form input {
   float: left;
@@ -329,16 +330,169 @@ body {
   width: 100%;
   clear: both;
 }
+
+/*Styles for inner pages*/
+.inner-page {
+  color: black;
+  background: #f8f3f0 url('../img/bg-pattern-white.jpg') repeat;
+}
+.inner-content {
+  margin-bottom: 77px;
+}
+.inner-content h2 {
+  margin-top: 54px;
+  margin-bottom: 25px;
+  font-size: 24px;
+  line-height: 30px;
+}
+.inner-content p {
+  margin: 14px 0;
+}
+.inner-content table {
+  border-collapse: collapse;
+}
+.inner-content td {
+  padding: 7px 17px;
+  border: 2px solid black;
+}
+.big-heading {
+  margin-top: 47px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.big-heading h2 {
+  position: relative;
+  z-index: 2;
+  display: inline;
+  margin: 0;
+  padding: 0 25px;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  background: #f8f3f0 url('../img/bg-pattern-white.jpg') repeat;
+}
+.big-heading:after {
+  content: '';
+  position: relative;
+  top: -25px;
+  z-index: 1;
+  display: block;
+  border-bottom: 2px solid black;
+}
+.inner-page .main-header {
+  margin-bottom: 50px;
+}
+.inner-page-title {
+  margin-bottom: 47px;
+}
+.inner-page-title h1 {
+  margin: 0;
+  margin-bottom: 13px;
+  padding: 0;
+  font-size: 30px;
+  line-height: 42px;
+}
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.breadcrumbs li {
+  position: relative;
+  display: inline;
+  padding-right: 40px;
+}
+.breadcrumbs li:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  width: 8px;
+  height: 8px;
+  background-color: black;
+  transform: rotate(45deg);
+}
+.breadcrumbs a {
+  text-decoration: none;
+  color: black;
+}
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+.breadcrumbs .current {
+  color: #aba9a7;
+}
+.breadcrumbs .current:after {
+  content: none;
+}
+.custom-list-1 {
+  margin: 14px 0;
+  padding: 0;
+  list-style: none;
+}
+.custom-list-1 li {
+  position: relative;
+  margin-bottom: 13px;
+  padding-left: 20px;
+}
+.custom-list-1 li:before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: black;
+  transform: rotate(45deg);
+}
+.prices-table {
+  width: 100%;
+}
+.prices-table td {
+  width: 50%;
+}
+.prices-table td:last-child {
+  text-align: center;
+}
+.inner-content-columns {
+  margin: 60px 0;
+}
+.inner-content-column-left,
+.inner-content-column-right {
+  width: 468px;
+}
+.inner-content-column-left {
+  float: left;
+}
+.inner-content-column-right {
+  float: right;
+}
+.inner-content-column-left *:first-child,
+.inner-content-column-right *:first-child {
+  margin-top: 0;
+}
+.inner-content-column-left *:last-child,
+.inner-content-column-right *:last-child {
+  margin-bottom: 0;
+}
+.short-text {
+  padding-right: 80px;
+}
+/*End of styles for inner pages*/
 .main-footer {
   margin-top: 60px;
   padding-top: 60px;
   padding-bottom: 40px;
+  color: white;
   background: #252525 url('../img/bg-pattern-black.jpg') 
 }
 .footer-contacts {
   float: left;
   width: 320px;
   margin-right: 80px;
+}
+.footer-contacts-tel {
+  text-decoration: none;
 }
 .footer-contacts a {
   color: #fff;
@@ -358,7 +512,7 @@ body {
 .footer-social p,
 .footer-copyright p {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 3px;
 }
 .footer-social p {
   text-align: center;
@@ -382,7 +536,6 @@ body {
   margin: auto;
   background: url('../img/sprite.png') no-repeat center;
   content: '';
-  
 }
 .social-btn:hover {
   background-color: white;
