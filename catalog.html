@@ -4,28 +4,30 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Магазин</title>
-  <meta name="description" content="Starter Template">
-  <meta name="author" content="Jorand Wayne">
-  <link rel="stylesheet" href="css/styles.css">
+  <meta name="description" content="Barbershop">
+  <meta name="author" content="Yury Zaytsev">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:700,400&subset=latin,cyrillic">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 </head>
-<body>
-  <header class="main-catalog-header">
+<body class="inner-page">
+  <header class="main-header">
     <div class="container clearfix">
       <nav class="main-navigation">
         <ul>
-          <li><a href="#">Главная</a></li>
+          <li><a href="index.html">Главная</a></li>
           <li><a href="#">Информация</a></li>
           <li><a href="#">Новости</a></li>
-          <li><a href="#">Прайс-лист</a></li>
+          <li><a href="price.html">Прайс-лист</a></li>
           <li class="active"><a href="#">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
       <div class="user-block">
-        <a href="#" class="login">Вход</a>
+        <a class="login" href="#">Вход</a>
       </div>
     </div>
   </header>
@@ -34,7 +36,7 @@
       <ul class="breadcrumbs">
         <li><a href="#">Главная</a></li>
         <li><a href="#">Магазин</a></li>
-        <li><a class="breadscrumbs-active" href="#">Средства для ухода</a></li>
+        <li><a class="current" href="#">Средства для ухода</a></li>
       </ul>
     <div class="sidebar">
       <form class="sidebar-filter" action="/echo" method="post">
@@ -129,14 +131,13 @@
       </div>
     </main>
   </div>
-  <footer class="main-catalog-footer">
+  <footer class="main-footer">
     <div class="container clearfix">
       <section class="footer-contacts">  
         Барбершоп «Бородинский»<br>
         Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
         <a href="#">Как нас найти?</a><br>
-        телефон: +7 (495) 666-02-66
-        <a href="tel:+74956660266">74956660266</a>
+        телефон: <a class="footer-contacts-tel" href="tel:+74956660266">+7 (495) 666-02-66</a>
       </section>
       <section class="footer-social">
         <p>Давайте дружить!</p>
