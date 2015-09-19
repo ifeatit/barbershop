@@ -157,7 +157,7 @@ body {
   left: 20px;
   width: 18px;
   height: 16px;
-  background: transparent url('../img/sprite.png') no-repeat -163px -1px;;
+  background: transparent url('../img/sprite.png') no-repeat -163px -1px;
   content: '';
   opacity: 0.3;
 }
@@ -577,7 +577,119 @@ body {
   color: black;
   background: white;
 }
-
+.modal-content {
+  position: absolute;
+  width: 300px;
+  top: 120px;
+  right: 0;
+  left: 0;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 45px 82px;
+  color: black;
+  background: #f8f3f0 url('../img/bg-pattern-white.jpg') repeat;
+  box-shadow: 0 30px 50px rgba(0,0,0,0.7); 
+}
+.modal-content-close {
+  position: absolute;
+  top: 55px;
+  right: -50px;
+  width: 20px;
+  height: 20px;
+  font-size: 30px;
+  font-family: 'Verdana', sans-serif;
+  color: white;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.modal-content h2 {
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 30px;
+  line-height: 42px;
+}
+.modal-content p {
+  margin: 0;
+  margin-bottom: 14px;
+}
+.modal-content .login-form {
+  margin-top: 27px;
+  margin-bottom: 6px;
+  box-sizing: border-box;
+}
+.login-form input[type='text'],
+.login-form input[type='password'] {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  padding-right: 40px;
+  font-family: 'PT Sans Narrow', sans-serif; 
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: black;
+  border: 2px solid black;
+  outline: none;
+  background-color: #f9f6f3;
+}
+.login-form input:focus {
+  border-color: #663d15;
+}
+.login-form #icon-user + label,
+.login-form #icon-password + label {
+  position: relative;
+}
+.login-form #icon-user + label:after {
+  content: '';
+  position: absolute;
+  top: -56px;
+  left: 270px;
+  width: 15px;
+  height: 15px;
+  background: url('../img/sprite.png') no-repeat -200px -1px;
+}
+.login-form #icon-password + label:after {
+  content: '';
+  position: absolute;
+  top: -46px;
+  left: 270px;
+  width: 15px;
+  height: 17px;
+  background: url('../img/sprite.png') no-repeat -183px -1px;
+}
+.login-form .restore{
+  float: right;
+  color: black;
+}
+.login-form .btn {
+  width: 100%;
+  margin-top: 15px;
+}
+.login-form input[type='checkbox'] {
+  display: none;
+}
+.login-form input[type='checkbox'] + label {
+  position: relative;
+  display: inline-block;
+  padding-left: 30px;
+  vertical-align: top;
+  cursor: pointer;
+}
+.login-form input[type='checkbox'] + label:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: url('../img/sprite.png') no-repeat -1px -1px;
+}
+.login-form input[type='checkbox']:checked + label:before{
+  background: url('../img/sprite.png') no-repeat -23px -1px;
+}
 /*to do
 - inline-bloks margins;
 - interligne;

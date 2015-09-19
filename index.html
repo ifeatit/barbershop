@@ -126,6 +126,21 @@
       </section>
     </div>
   </footer>
+  <div class="modal-content">
+    <div class="modal-content-close">&times;</div>
+    <h2 class="modal-content-title">Личный кабинет</h2>
+    <p>Введите пожалуйста свой логин и пароль</p>
+    <form class="login-form" action="/echo" method="post">
+      <input id="icon-user" type="text" name="login" placeholder="Логин" required>
+      <label for="icon-user"></label>
+      <input class="icon-password" type="password" id="icon-password" name="password" placeholder="Пароль" required>
+      <label for="icon-password"></label>
+      <input type="checkbox" name="remember" id="remember-me">
+      <label for="remember-me">Заполните меня</label>
+      <a class="restore" href="">Я забыл пароль</a>
+      <button type="submit" class="btn">Войти</button>
+    </form>
+  </div>
   <script src="js/scripts.js"></script>
 </body>
 </html>
