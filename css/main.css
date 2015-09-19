@@ -583,7 +583,7 @@ body {
   top: 120px;
   right: 0;
   left: 0;
-  display: none;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   padding: 45px 82px;
@@ -638,23 +638,23 @@ body {
 .login-form input:focus {
   border-color: #663d15;
 }
-.login-form #icon-user + label,
-.login-form #icon-password + label {
+.login-form label[for='icon-user'],
+.login-form label[for='icon-password'] {
   position: relative;
 }
-.login-form #icon-user + label:after {
+.login-form label[for='icon-user']:after {
   content: '';
   position: absolute;
-  top: -56px;
+  top: 0;
   left: 270px;
   width: 15px;
   height: 15px;
   background: url('../img/sprite.png') no-repeat -200px -1px;
 }
-.login-form #icon-password + label:after {
+.login-form label[for='icon-password']:after {
   content: '';
   position: absolute;
-  top: -46px;
+  top: 0;
   left: 270px;
   width: 15px;
   height: 17px;
@@ -677,6 +677,9 @@ body {
   padding-left: 30px;
   vertical-align: top;
   cursor: pointer;
+}
+.login-form input[type='checkbox'] + label:hover {
+  color: #663d15;
 }
 .login-form input[type='checkbox'] + label:before {
   content: '';
