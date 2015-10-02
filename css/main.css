@@ -250,6 +250,7 @@ body {
 }
 .btn {
   display: inline-block;
+  overflow: hidden;
   margin-right: 20px;
   padding: 10px 33px;
   font-family: 'PT Sans Narrow', sans-serif;
@@ -259,6 +260,8 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   vertical-align: top;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   color: white;
   background-color: black;
   border: none;
@@ -597,10 +600,15 @@ body {
   margin-right: 0;
 }
 .catalog-item-title {
-  display: block;
   text-transform: initial;
 }
 .catalog-item-preview {
+  width: 220px;
+  height: 176px;
+  background-color: #f8f8f8;
+  overflow: hidden;
+}
+.catalog-item-preview  img {
   width: 220px;
   height: 176px;
 }
@@ -608,7 +616,10 @@ body {
   padding: 15px;
 }
 .catalog-item-info a {
+  display: block;
+  overflow: hidden;
   color: black;
+  text-overflow: ellipsis;
 }
 .catalog-item-price {
   margin-top: 15px;
@@ -728,7 +739,6 @@ p.item-description {
 .footer-contacts {
   float: left;
   width: 320px;
-  margin-right: 80px;
 }
 .footer-contacts-tel {
   text-decoration: none;
@@ -741,6 +751,7 @@ p.item-description {
 }
 .footer-social {
   float: left;
+  width: 300px;
   text-align: center;
 }
 .footer-copyright {
