@@ -115,15 +115,21 @@ body {
   text-decoration: none;
   color: white;
 }
+.main-navigation .disabled a {
+  color: #aba9a7;
+  cursor: default;
+}
 .main-navigation a:hover {
   background-color: #242424;
 }
 .main-navigation .active a {
   position: relative;
 }
-.main-navigation .active a:hover {
+.main-navigation .active a:hover,
+.main-navigation .disabled a:hover {
   background: none;
 }
+
 .main-navigation .active a::after {
   position: absolute;
   bottom: 0;
