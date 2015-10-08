@@ -337,6 +337,7 @@ body {
 }
 .appointment-form .btn {
   width: 100%;
+  margin-top: 15px; 
   clear: both;
 }
 
@@ -829,7 +830,7 @@ p.item-description {
 }
 
 /* Pop-up login form */
-.modal-content {
+.modal-content-login {
   position: absolute;
   width: 300px;
   top: 120px;
@@ -839,13 +840,14 @@ p.item-description {
   margin-left: auto;
   margin-right: auto;
   padding: 45px 82px;
+  z-index: 11;
   color: black;
   background: #f8f3f0 url('../img/bg-pattern-white.jpg') repeat;
   box-shadow: 0 30px 50px rgba(0,0,0,0.7); 
 }
 .modal-content-close {
   position: absolute;
-  top: 55px;
+  top: 52px;
   right: -50px;
   width: 20px;
   height: 20px;
@@ -855,13 +857,13 @@ p.item-description {
   cursor: pointer;
   opacity: 0.5;
 }
-.modal-content h2 {
+.modal-content-login h2 {
   margin: 0;
   margin-bottom: 16px;
   font-size: 30px;
   line-height: 42px;
 }
-.modal-content p {
+.modal-content-login p {
   margin: 0;
   margin-bottom: 14px;
 }
@@ -919,6 +921,7 @@ p.item-description {
 .login-form .btn {
   width: 100%;
   margin-top: 15px;
+  margin-bottom: 17px;
 }
 .login-form input[type='checkbox'] {
   display: none;
@@ -945,6 +948,25 @@ p.item-description {
 .login-form input[type='checkbox']:checked + label:before{
   background: url('../img/sprite.png') no-repeat -23px -1px;
 }
+@keyframes bounce {
+  0%    { transform: translateY(-2000px); }
+  70%   { transform: translateY(30px);    }
+  90%   { transform: translateY(-10px);   }
+  100%  { transform: translateY(0);       }
+}
+@keyframes shake {
+  0%, 100%                { transform: translateX(0);     }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+  20%, 40%, 60%, 80%      { transform: translateX(10px);  }
+}
+.modal-content-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+.modal-error {
+  animation: shake 0.6s;
+}
+
 /* Pop-up map */
 .modal-content-map {
   position: fixed;
@@ -956,15 +978,25 @@ p.item-description {
   height: 561px;
   display: none;
   margin: auto;
+  z-index: 12;
   border: 7px solid white;
   background: #e9e5dc url('');
   box-shadow: 0 30px 50px rgba(0,0,0,0.7);
 }
-/*to do
-- inline-bloks margins;
-- interligne;
-- <p> in news preview and under.
+.modal-content-show {
+  display: block;
+}
 
-/*questions 
-- spaces between properties;
-- placeholder with type date and time. Can I use?
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.5);
+}
+.overlay--show {
+  display: block;
+}
