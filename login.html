@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Авторизация</title>
+  <meta name="description" content="Barbershop">
+  <meta name="author" content="Yury Zaytsev">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:700,400&subset=latin,cyrillic">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body class="inner-page">
+  <header class="main-header">
+    <div class="container clearfix">
+      <nav class="main-navigation">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li class="disabled"><a href="#">Информация</a></li>
+          <li class="disabled"><a href="#">Новости</a></li>
+          <li class="active"><a href="#">Прайс-лист</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li class="disabled"><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="user-block">
+        <a class="login" href="#">Вход</a>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="inner-page-title">
+      <h1>Прайс-лист</h1>
+      <ul class="breadcrumbs">
+        <li><a href="#">Главная</a></li>
+        <li class="current">Вход</li>
+      </ul>
+    </div>
+    <div class="inner-content">
+      <form class="login-form" action="/echo" method="post">
+        <p>Введите пожалуйста свой логин и пароль</p>
+        <label for="icon-user">
+          <input id="icon-user" type="text" name="login" placeholder="Логин" autofocus required>
+        </label>
+        <label for="icon-password">
+          <input class="icon-password" type="password" id="icon-password" name="password" placeholder="Пароль" required>
+        </label>
+        <input id="remember-me" type="checkbox" name="remember">
+        <label for="remember-me">Заполните меня</label>
+        <a class="restore" href="#">Я забыл пароль</a>
+        <button type="submit" class="btn">Войти</button>
+      </form>
+    </div>
+  </div>
+  <footer class="main-footer">
+    <div class="container clearfix">
+      <section class="footer-contacts">  
+        Барбершоп «Бородинский»<br>
+        Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+        <a href="#">Как нас найти?</a><br>
+        телефон: <a class="footer-contacts-tel" href="tel:+74956660266">+7 (495) 666-02-66</a>
+      </section>
+      <section class="footer-social">
+        <p>Давайте дружить!</p>
+        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+      </section>
+      <section class="footer-copyright">
+        <p>Дизайн сайта:</p>
+        <a class="btn" href="#">htmlacademy.ru</a>  
+      </section>
+    </div>
+  </footer>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

@@ -516,12 +516,21 @@ body {
   position: relative;
   margin-bottom: 13px;
 }
-.filter-items input[type='checkbox'],
-.filter-items input[type='radio'] {
+.filter-items input[type='checkbox']:enabled,
+.filter-items input[type='checkbox']:disabled,
+.filter-items input[type='radio']:enabled,
+.filter-items input[type='radio']:disabled {
   display: none;
 }
+/*for IE 8*/
 .filter-items input[type='checkbox'] + label,
 .filter-items input[type='radio'] + label {
+  padding-left: 5px; 
+}
+.filter-items input[type='checkbox']:enabled + label,
+.filter-items input[type='checkbox']:disabled + label,
+.filter-items input[type='radio']:enabled + label,
+.filter-items input[type='radio']:disabled + label {
   position: relative;
   display: inline-block;
   padding-left: 43px;
@@ -546,10 +555,12 @@ body {
   width: 20px;
   height: 20px;
 }
-.filter-items input[type='checkbox'] + label:before {
+.filter-items input[type='checkbox']:enabled + label:before,
+.filter-items input[type='checkbox']:disabled + label:before {
    background: url('../img/sprite.png') no-repeat -1px -1px;
 }
-.filter-items input[type='radio'] + label:before {
+.filter-items input[type='radio']:enabled + label:before,
+.filter-items input[type='radio']:disabled + label:before {
    background: url('../img/sprite.png') no-repeat -45px -1px;
 }
 .filter-items input[type='checkbox']:checked + label:before{
@@ -867,10 +878,16 @@ p.item-description {
   margin: 0;
   margin-bottom: 14px;
 }
-.modal-content .login-form {
+.modal-content-login .login-form {
   margin-top: 27px;
   margin-bottom: 6px;
   box-sizing: border-box;
+}
+.inner-content .login-form {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 300px;
+  min-width: 300px;
 }
 .login-form input[type='text'],
 .login-form input[type='password'] {
@@ -923,10 +940,12 @@ p.item-description {
   margin-top: 15px;
   margin-bottom: 17px;
 }
-.login-form input[type='checkbox'] {
+.login-form input[type='checkbox']:enabled,
+.login-form input[type='checkbox']:disabled {
   display: none;
 }
-.login-form input[type='checkbox'] + label {
+.login-form input[type='checkbox']:enabled + label,
+.login-form input[type='checkbox']:disabled + label {
   position: relative;
   display: inline-block;
   padding-left: 30px;
@@ -936,7 +955,8 @@ p.item-description {
 .login-form input[type='checkbox'] + label:hover {
   color: #663d15;
 }
-.login-form input[type='checkbox'] + label:before {
+.login-form input[type='checkbox']:enabled + label:before,
+.login-form input[type='checkbox']:disabled + label:before {
   content: '';
   position: absolute;
   top: 2px;
