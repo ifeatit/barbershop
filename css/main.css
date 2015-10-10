@@ -273,36 +273,59 @@ body {
   background-color: #663d15;
 }
 .btn:disabled {
-  cursor: pointer;
+  cursor: default;
   opacity: 0.5;
 }
 .btn:disabled:hover {
   background-color: black;
 }
-.gallery {
-  position: relative;
-  height: 260px;
-}
 .gallery-content {
-  height: 164px;
   margin: 0;
-  background-color: #ccc;
-  border: 7px solid white;
+  max-height: 250px;
+  overflow-y: auto; 
 }
 .gallery-content img {
+  width: 135px;
+  height: 82px;
+  margin-right: 5px;
+}
+.gallery-live {
+  position: relative;
+  padding-bottom: 82px;
+}
+.gallery-live .gallery-content {
+  position: relative;
+  height: 164px;
+  border: 7px solid white;
+  background: #ccc;
+  overflow: hidden;
+}
+.gallery-live .gallery-content a {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.gallery-live .gallery-content img {
   width: 286px;
   height: 164px;
+  margin-right: 0;
 }
-.gallery .btn {
+.gallery-live .btn {
   position: absolute;
   bottom: 0;
   width: 140px;
   margin: 0;
 }
-.gallery-prev {
+.gallery-togles {
+  display: none;
+}
+.gallery-togles-visible {
+  display: block;
+}
+.gallery-live .gallery-prev {
   left: 0;
 }
-.gallery-next {
+.gallery-live .gallery-next {
   right: 0;
 }
 .index-content p {
