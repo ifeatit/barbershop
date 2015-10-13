@@ -26,7 +26,7 @@ function addEvent(elem, type, handler){
   }
 };
 addEvent(linkLogin, "click", function(event) {
-  event.preventDefault();
+  event.preventDefault ? event.preventDefault() : window.event.returnValue = false; // window.event.returnValue for IE8
   popupLogin.classList.add("modal-content-show");
   overlay.classList.add("overlay--show");
   if (storage) {
@@ -38,7 +38,7 @@ addEvent(linkLogin, "click", function(event) {
 });
 
 addEvent(loginClose, "click", function(event) {
-  event.preventDefault();
+  event.preventDefault ? event.preventDefault() : window.event.returnValue = false;
   popupLogin.classList.remove("modal-content-show");
   overlay.classList.remove("overlay--show");
   if (popupLogin.classList.contains("modal-error")) {
@@ -70,7 +70,7 @@ addEvent(window, "keydown", function(event) {
 
 for (var i=0; i<linkMap.length; i++){
   addEvent(linkMap[i], "click", function(event) {
-    event.preventDefault();
+    event.preventDefault ? event.preventDefault() : window.event.returnValue = false;
     iframeMap.setAttribute("src", srcMap);
     popupMap.classList.add("modal-content-show");
     overlay.classList.add("overlay--show");
@@ -78,13 +78,13 @@ for (var i=0; i<linkMap.length; i++){
 };
 
 addEvent(mapClose, "click", function(event) {
-  event.preventDefault();
+  event.preventDefault ? event.preventDefault() : window.event.returnValue = false;
   popupMap.classList.remove("modal-content-show");
   overlay.classList.remove("overlay--show");
 });
 
 addEvent(overlay, "click", function(event) {
-  event.preventDefault();
+  event.preventDefault ? event.preventDefault() : window.event.returnValue = false;
   if (popupLogin.classList.contains("modal-content-show")) {
     popupLogin.classList.remove("modal-content-show");
   } else if (popupMap.classList.contains("modal-content-show")) {
